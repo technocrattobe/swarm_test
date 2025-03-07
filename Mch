@@ -1,0 +1,3 @@
+Open Cluster Management is intentionally designed to support only a single multicluster hub per deployment. The architecture uses a unique, centralized control plane to manage all connected clusters, which helps avoid conflicts in policy enforcement, resource management, and overall system state consistency. In other words, allowing more than one hub in the same environment could lead to operational conflicts and management ambiguities, so the system restricts you to a single hub instance.
+
+If your use case requires separating management domains or achieving isolation, you might need to consider deploying multiple, fully isolated Open Cluster Management installations rather than trying to run multiple hubs within a single environment.
